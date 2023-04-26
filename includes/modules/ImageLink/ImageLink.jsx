@@ -7,15 +7,14 @@ import './style.css';
 
 class HelloWorld extends Component {
 
-  static slug = 'uly_hello_world';
+  static slug = 'uly_image_link';
 
   render() {
-    const Content = this.props.content;
 
     return (
-      <h1>
-        <Content/>
-      </h1>
+
+        <a className="uly-image-link" href={this.props.url}><span>{this.props.text}</span></a>
+
     );
   }
 }
